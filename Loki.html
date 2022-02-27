@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loki</title>
+    <style>
+      body {
+        background: #74f6a7;
+    
+      }
+
+      h1 {
+        text-align: center;
+        color: #236969;
+        font-weight: bolder;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+         padding: 16px;
+        
+
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: darkgreen;
+        color: white;
+        font-size: 20px;
+        padding: 16px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: width 2s height 2s background-color 2s transform 2s;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+          max-width: 800px;
+          margin: 0 auto;
+      }
+
+      .learne-more {
+        display: block;
+        margin-top: 20px;
+        color: #489cc1;
+        text-decoration: none;
+        font-size: 11px;
+      }
+
+      .learne-more:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container"></div>
+    <h1>Who is the better friend? </h1>
+    <h2>Americans First Avenger Vs Billionaire Playboy</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/959/original/iron-man-captain-america-endgame.jpg?1634338916"
+      alt="avengers"
+    />
+    <p>
+      They met in Avengers and worked as a team, they had complications as they were competitors even as a team. Eventually, they became friends, but as their story progressed some incidents caused some cracks in their friendship
+      <br />
+      <a 
+        href="https://fandomwire.com/7-reasons-why-steve-rogers-and-tony-stark-were-good-friends-3-reasons-why-they-werent/"
+        target="_blank"
+        class="learn-more"
+      >
+      
+        Learn More About these Avengers
+      </a>
+      <button class="buy-button">
+          Steve Rogers or Captain America
+        </button>
+
+    
+    </p>
+    <strong>  
+This page was built by Nicole Ogertschnig
+    </strong>
+     
+</div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let marvel = prompt("Who do you love Captain America or Iron Man?");
+	marvel = marvel.toLowerCase().trim();
+      
+        if (marvel === "captain america") {
+          alert("You made the good choice");
+        } else {
+          alert("Tony loves you 3000");
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
